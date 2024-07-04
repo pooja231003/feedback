@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JV Global Feedbackform</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(174, 244, 239);
+            color: black;
+        }
+
+        #description {
+            text-align: center;
+        }
+
+        #title {
+            background-color: rgb(174, 244, 239);
+            color: black;
+            text-align: center;
+            width: 100%;
+            margin: auto;
+        }
+
+        .container {
+            width: 65%;
+            margin: auto;
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 15px;
+        }
+
+        #feedbackform {
+            text-align: center;
+        }
+
+        .rowtab {
+            display: block;
+            padding-bottom: 6px;
+        }
+
+        .labeltab {
+            display: inline-block;
+            width: 44%;
+            text-align: right;
+            vertical-align: top;
+        }
+
+        .inputtab {
+            display: inline-block;
+            width: 54%;
+            text-align: left;
+
+        }
+
+        .selecttab {
+            display: inline-block;
+            width: 54%;
+            text-align: left;
+
+        }
+
+        .selectbox {
+            padding: 5px 0px;
+        }
+
+        .submittab {
+            background-color: rgb(101, 101, 158);
+            color: white;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header id="title">
+        <h1>JVGlobal Feedback Form</1>
+    </header>
+
+    <section>
+        <div class="container">
+            <div id="description">
+                <p>Let us know how we can improve JVGlobal</p>
+            </div>
+            <form id="feedbackform">
+                <div class="rowtab">
+                    <div class="labeltab">
+                        <label>* Name: </label>
+                    </div>
+                    <div class="inputtab">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                    </div>
+                </div><br>
+                <div class="rowtab">
+                    <div class="labeltab">
+                        <label>* Email: </label>
+                    </div>
+                    <div class="inputtab">
+                        <input type="email" name="email" placeholder="Enter your Email" required>
+                    </div>
+                </div><br>
+                <div class="rowtab">
+                    <div class="labeltab">
+                        <label>* Age: </label>
+                    </div>
+                    <div class="inputtab">
+                        <input type="number" name="age" placeholder="Age" required>
+                    </div>
+                </div><br>
+                <div class="rowtab">
+                    <div class="labeltab">
+                        <label>Which option best describes your role?</label>
+                    </div>
+                    <div class="selecttab">
+                        <select id="selectbox">
+                            <option>Student</option>
+                            <option>Lecturer</option>
+                            <option>HOD</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                </div><br>
+                <div class="rowtab">
+                    <div class="labeltab">
+                        <label>How likely is that you would recommend JVGlobalt a friend</label>
+                    </div>
+                    <div class="inputtab">
+                        <div><input name="radio-buttons" value="1" type="radio"
+                                class="userRatings"><label>Definitely</label></div>
+                        <div><input name="radio-buttons" value="2" type="radio" class="userRatings"><label>Maybe</label>
+                        </div>
+                        <div><input name="radio-buttons" value="3" type="radio" class="userRatings"><label>Not
+                                sure</label></div>
+                    </div>
+                </div><br>
+                <div class="rowtab">
+                    <div class="labeltab">
+                        <label>
+                            What do you like most in JVGlobal
+                        </label>
+                    </div>
+                    <div class="inputtab">
+                        <select>
+                            <option>Select an option</option>
+                            <option>Projects</option>
+                            <option>Community</option>
+                            <option>Open source</option>
+                        </select>
+                    </div>
+                </div><br>
+                <div class="rowtab">
+                    <div class="labeltab">
+                        <label>Things that should be improved in the future<br>(check all that apply)</label><br>
+                    </div>
+                    <div class="inputtab">
+                        <input type="checkbox" name="project" value="Front-end Project"><label>Front-end
+                            Project</label><br>
+
+
+                        <input type="checkbox" name="project" value="Back-end Project"><label>Back-end
+                            Project</label><br>
+
+
+                        <input type="checkbox" name="project" value="DataVisualisation"><label>Data
+                            Visualisation</label><br>
+
+                        <input type="checkbox" name="project" value="Challenges"><label>Challenges</label><br>
+
+                        <input type="checkbox" name="project" value="Open source community"><label>Open
+                            source community</label><br>
+
+                        <input type="checkbox" name="project" value="Gitter help rooms"><label>Gitter help
+                            rooms</label><br>
+
+                        <input type="checkbox" name="project" value="Vedios"><label>Vedios</label><br>
+
+                        <input type="checkbox" name="project" value="City Meetups"><label>City Meetups</label><br>
+
+                        <input type="checkbox" name="project" value="Wiki"><label>Wiki</label><br>
+
+                        <input type="checkbox" name="project" value="Forum"><label>Forum</label><br>
+
+                        <input type="checkbox" name="project" value="Additional courses"><label>Additional
+                            courses</label><br>
+                    </div>
+                    <br><br>
+                    <div class="rowtab">
+                        <div class="labeltab">
+                            <label for="comments">Any Comments or Suggestions</label>
+                        </div>
+                        <div class="inputtab">
+                            <textarea id="comments" class="input-field" style="height:50px;resize:vertical, horizontal;"
+                                name="comment" placeholder="Enter your comment here..."></textarea>
+                        </div>
+                    </div><br>
+                    <button class="submittab" id="submit" type="submit">Submit</button>
+                </div>
+
+        </div>
+        </form>
+        </div>
+    </section>
+</body>
+
+</html>
